@@ -1,0 +1,76 @@
+/* stylelint-disable at-rule-no-unknown */
+/* stylelint-disable csstree/validator */
+@use "./_colors.scss";
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 410px;
+  min-width: 325px;
+  margin-inline: auto;
+  background-color: colors.$darkGrey;
+  border-radius: 20px;
+  padding: 1.5rem;
+  color: colors.$light;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  &__img {
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+  }
+
+  &__social-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__social-link {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: colors.$light;
+    background-color: colors.$grey;
+    padding-block: 0.75rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  &__author {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    font-size: 1rem;
+    text-align: center;
+
+    &-description {
+      margin-block-start: 10px;
+    }
+
+    &-name {
+      font-weight: 700;
+    }
+
+    &-location {
+      color: colors.$green;
+      font-size: 0.85rem;
+    }
+  }
+}
